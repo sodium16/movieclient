@@ -5,7 +5,7 @@ import Layout from "./components/Layout";
 import Home from "./components/home/Home";
 
 const App = () => {
-  const [movies, setMovies] = useState();
+  const [movies, setMovies] = useState([]);
 
   const getMovies = async () => {
     try {
@@ -24,7 +24,7 @@ const App = () => {
     <div>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/" element={<Home movies={movies} />}></Route>
         </Route>
       </Routes>
     </div>
