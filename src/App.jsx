@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import api from "./api/axiosConfig";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
 
 const App = () => {
   const [movies, setMovies] = useState();
@@ -13,11 +15,17 @@ const App = () => {
     }
   };
 
-  useEffect(() => { 
+  useEffect(() => {
     getMovies();
-  }, [])
+  }, []);
 
-  return <div>App</div>;
+  return (
+    <div>
+      <Routes>
+        <Route path="/" element={Layout}></Route>
+      </Routes>
+    </div>
+  );
 };
 
 export default App;
