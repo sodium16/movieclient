@@ -10,9 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/free-solid-svg-icons": "^7.3.1",
+    "@mui/material": "^9.5.0",
     "axios": "^1.20.0",
+    "bootstrap": "^5.3.8",
     "react": "^19.3.1",
-    "react-dom": "^19.3.1"
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^19.3.1",
+    "react-material-ui-carousel": "^3.4.2",
+    "react-player": "^3.4.0",
+    "react-router-dom": "^7.18.4"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
